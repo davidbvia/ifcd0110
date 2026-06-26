@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 250;
+    font-style: normal;
+    font-size: 25px;
+}
+
+#layout {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    width: 85vw;
+    margin: auto;
+}
+
+#main-title {
+    width: 80vw;
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+svg {
+    width: 150px;
+    rotate: 30deg;
+}
+
+.wrapper {
+    display: block;
+    width: 40vw;
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 10px;
+    margin: auto;
+}
+
+#calculadora {
+    width: 20vw;
+    border: 2.5px solid gray;
+    height: 60vh;
+    margin: auto;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: silver;
+}
+
+#display {
+    width: 18vw;
+    height: 15vh;
+    border: 2.5px solid gray;
+    margin: 10px auto;
+    background-color: white;
+}
+
+#operacions {
+    width: 18vw;
+    height: 5vh;
+    border-bottom: 1px solid gray;
+    background-color: white;
+}
+
+.fila {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 18vw;
+    margin: 5px;
+    margin-left: 13px;
+}
+
+.btn {
+    width: 3.8vw;
+    height: 7vh;
+    border-radius: 2.5px;
+    font-size: 20px;
+    transition: all 1.5s ease-in-out;
+}
+
+.btn:hover {
+    background-color: silver;
+    border: 1.5px solid blue;
+}
+
+#clean {
+    width: auto;
+    margin: auto;
+}

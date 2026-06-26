@@ -1,0 +1,11 @@
+MVC
+Model => Dades (HTML i Javascript)
+Vista => Presentació (HTML i CSS)
+Controlador => Accions (HTML i Javascript)
+
+------------------------------------------
+Jerarquia:
+BOM -> Browser Object Model (engloba tot el navegador)
+DOM -> Document Object Model (engloba <body></body>
+------------------------------------------
+Les etiquetes són objectes: tenen propietats i poden aplicar-se accions

@@ -1,0 +1,9 @@
+body {
+    background-color: silver;
+    font-size: 3rem;
+    color: limegreen;
+    font-style: normal;
+    font-family: "Story Script", sans-serif;
+    margin: 50px;
+    -webkit-text-stroke: 2px blue;
+}

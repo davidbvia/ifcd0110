@@ -1,0 +1,1 @@
+console.log(`El resultat de sumar 3 i 5 és: ${3 + 5}`);
