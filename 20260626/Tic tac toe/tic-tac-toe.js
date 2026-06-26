@@ -22,7 +22,7 @@ function tirada(fila, columna) {
     }
 
     // Comprovar tres en ratlla
-
+    comprova();
 }
 
 // Canviar color jugador
@@ -64,8 +64,80 @@ function canviaColor(qui, fila, columna) {
     else { }
 }
 
-function comprova(tirades) {
+function comprova() {
+    let resultatJugador1;
+    let resultatJugador2;
+    
+    // Comprovar files
+    for (let i = 0; i < 3; i++) {
+        resultatJugador1 = 0;
+        resultatJugador2 = 0;
+        for (let j = 0; j < 3; j++) {
+            if (tirades[i][j] === "X") { resultatJugador1++; }
+            else if (tirades[i][j] === "O") { resultatJugador2++; }
+        }
+        if (resultatJugador1 === 3) {
+            alert("Ha guanyat el jugador 1");
+            reinicia();
+            break;
+        }
+        else if (resultatJugador2 === 3) {
+            alert("Ha guanyat el jugador 2");
+            reinicia();
+            break;
+        }
+    }
 
+    // Comprovar columnes
+    for (let j = 0; j < 3; j++) {
+        resultatJugador1 = 0;
+        resultatJugador2 = 0;
+        for (let i = 0; i < 3; i++) {
+            if (tirades[i][j] === "X") { resultatJugador1++; }
+            else if (tirades[i][j] === "O") { resultatJugador2++; }
+        }
+        if (resultatJugador1 === 3) {
+            alert("Ha guanyat el jugador 1");
+            reinicia();
+            break;
+        }
+        else if (resultatJugador2 === 3) {
+            alert("Ha guanyat el jugador 2");
+            reinicia();
+            break;
+        }
+    }
+
+    // Comprovar diagonals
+    resultatJugador1 = 0;
+    resultatJugador2 = 0;
+    for (let i = 0; i < 3; i++) {
+        if (tirades[i][i] === "X") { resultatJugador1++; }
+        else if (tirades[i][i] === "O") { resultatJugador2++; }
+    }
+    if (resultatJugador1 === 3) {
+        alert("Ha guanyat el jugador 1");
+        reinicia();
+    }
+    else if (resultatJugador2 === 3) {
+        alert("Ha guanyat el jugador 2");
+        reinicia();
+    }
+
+    resultatJugador1 = 0;
+    resultatJugador2 = 0;
+    for (let i = 0; i < 3; i++) {
+        if (tirades[i][2 - i] === "X") { resultatJugador1++; }
+        else if (tirades[i][2 - i] === "O") { resultatJugador2++; }
+    }
+    if (resultatJugador1 === 3) {
+        alert("Ha guanyat el jugador 1");
+        reinicia();
+    }
+    else if (resultatJugador2 === 3) {
+        alert("Ha guanyat el jugador 2");
+        reinicia();
+    }   
 }
 
 function reinicia() {

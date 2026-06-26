@@ -49,9 +49,11 @@ svg {
 
 #tauler {
     display: flex;
+    justify-content: center;
     background-color: gray;
     width: auto;
     height: auto;
+    border-radius: 10px;
 }
 
 .fitxa {
